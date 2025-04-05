@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('./7398642.jpg'); /* Empty path as requested */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .login-container {
+    width: 320px;
+    padding: 20px;
+    background: rgba(142, 142, 160, 0.6);
+    backdrop-filter: blur(100%);
+    border-radius: 10px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .title {
+    color: white;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 22px;
+    font-weight: 500;
+  }
+
+  .input-group {
+    position: relative;
+  }
+
+  .input-group i {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  input {
+    width: 100%;
+    padding: 12px 12px 12px 35px;
+    border: none;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.15);
+    color: white;
+    outline: none;
+  }
+
+  input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+  .login-btn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.25);
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    margin-top: 5px;
+  }
+
+  .divider {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: white;
+    margin: 5px 0;
+  }
+
+  .divider::before, .divider::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  }
+
+  .divider span {
+    padding: 0 10px;
+    font-size: 14px;
+  }
+
+  .social-login {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  .social-btn {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.15);
+    color: white;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    cursor: pointer;
+  }
